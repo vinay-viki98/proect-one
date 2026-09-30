@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEY BUDDY</title>
+</head>
+<body>
+    <h1>HEY VINAY</h1>
+    <p id="date"></p>
+
+    <script>
+        const today = new Date();
+
+        document.getElementById("date").textContent =
+            "Date: " + today.toLocaleDateString("en-IN", {
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric"
+            });
+    </script>
+</body>
+</html>
